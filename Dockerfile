@@ -1,8 +1,8 @@
 FROM ubuntu:xenial
 
 LABEL maintainer="David Carrera del Castillo <eoldavix@gmail.com>" \
-      org.label-schema.url="https://github.com/eoldavix/docker-pdk-validate" \
-      org.label-schema.name="Puppet Development Kit Validate tool" \
+      org.label-schema.url="https://github.com/eoldavix/docker-pdk" \
+      org.label-schema.name="Puppet Development Kit tool" \
       org.label-schema.license="Apache-2.0"
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -23,5 +23,5 @@ VOLUME ["/app"]
 
 WORKDIR /app
 
-ENTRYPOINT ["/usr/local/bin/pdk", "validate"]
+ENTRYPOINT ["/usr/local/bin/pdk"]
 CMD []
