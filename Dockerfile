@@ -11,7 +11,7 @@ WORKDIR /root
 
 RUN \
   apt-get update && \
-  apt-get install -y wget && \
+  apt-get install -y wget build-essential && \
   wget "https://pm.puppet.com/cgi-bin/pdk_download.cgi?dist=ubuntu&rel=16.04&arch=amd64&ver=latest" -O pdk.deb && \
   dpkg -i /root/*.deb && \
   rm /root/*.deb && \
